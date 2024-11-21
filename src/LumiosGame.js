@@ -17,7 +17,7 @@ const LumiosGame = () => {
   const [winner, setWinner] = useState(null);
 
   // Configuration WebSocket
-  const { sendMessage, lastMessage } = useWebSocket('ws://localhost:3001');
+  const { sendMessage, lastMessage } = useWebSocket('wss://lumios-backend.onrender.com/ws');
 
   // Synchronisation avec les messages WebSocket
   useEffect(() => {
